@@ -7,10 +7,6 @@
 
     <style>
         
-        div {
-            border: 1px solid black;
-        }
-
         li {
             border: 1px solid black;
         }
@@ -19,8 +15,27 @@
             color: red;
         }
 
-        div a {
+        
+        /* Using ID and class selectors for specificity */
+
+        #exec-bio {
+            background-color: lightgray;
+        }
+
+        #orange-box {
+            background-color: orange;
+        }
+
+        .bio-box {
+            border: 1px solid black;
+        }
+
+        .bio-box a {
             color: green;
+        }
+
+        .azure-box {
+            background-color: azure;
         }
 
     </style>
@@ -32,7 +47,7 @@
     <h1>I'm an h1</h1>
     
     <ul>
-        <li>
+        <li id="orange-box">
             <a href="https://example.com/">Link</a>
         </li>
         <li>
@@ -45,19 +60,19 @@
     
     <h2>I'm an h2</h2>
     
-    <div>
+    <div id="exec-bio" class="bio-box azure-box">
         <a href="https://example.com">I'm a link</a>
     </div>
     
-    <div>
+    <div class="bio-box azure-box">
         <a href="https://example.com/">I'm a link</a>
     </div>
     
-    <div>
+    <div class="bio-box azure-box">
         <a href="https://example.com/">I'm a link</a>
     </div>
     
-    <div>
+    <div class="bio-box azure-box">
         <a href="https://example.com/">I'm a link</a>
     </div>
     
